@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainPost{
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+  
 }
 
-.App-link {
-  color: #61dafb;
+.head{
+  display: flex;
+  border: 1px solid  lavender;;
+  background-color: lavender;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 10px 5px rgb(182, 180, 180) ;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.icon{
+ color: rgb(3, 160, 160);
+}
+.webTitle{
+  color: rgb(3, 160, 160);
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+  border: 1px solid black;
+  background-color:  white;
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  padding: 1%;
+  font-weight: bolder;
+
+}
+
+.btn{
+  border: 1px solid black;
+  background-color: rgb(3, 160, 160);
+  border-radius: 20px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 3px;
+  font-weight: bolder;
+}
+.form{
+  display: flex;
+  margin-top: 22px;
+  
+}
+
+.post{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color:  lavender;
+  padding: 20px;
+  width: 500px;
+  margin-top:80px;
+
+}
+.post > .title{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.post > img{
+  width: 500px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For Desktop */
+}
+@media only screen and (max-width: 992px) {
+  /* <!-- For Laptop --> */
+}
+@media only screen and (max-width: 768px) {
+  /* <!-- For Tab --> */
+ 
+ .post{
+  margin-top: 100px;
+ }
+ .webTitle{
+  font-size: x-large;
+ }
+ .btn{
+  margin-top: -1px;
+ }
+}
+@media only screen and (max-width: 425px) {
+  /* <!-- For Mobile -->  */
+  .head{
+    display: flex;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .webTitle{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    margin-left: 90px;
+   
+   }
+   .form{
+    justify-content: center;
+   }
+   input{
+    width: 20%;
+    margin-left: -500px;
+    display: flex;
+    margin-top: 20px;
+    height: 25px;
+   }
+   .btn{
+    width: 80px;
+    height: 25px;
+    margin-top: 22px;
+   }
+  .post{
+    margin-top: 100px;
+    width: 250px;
+   }
+   .post > img{
+    width: 250px;
+    margin-top: 10px;
   }
 }
